@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSSE WebApp</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="app.css">
+    
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header_inner">
+            <div class="header_left">
+                <div>
+                    <img class="header_logo" src="./img/posseLogo.png" alt="POSSEロゴ">
+                </div>
+                <p class="header_week">4th week</p>
+            </div>
+            <div class="header_right">
+                <a href="#modal">記録・投稿</a>
+            </div>
+        </div>
+    </header>
+
+    <!--main-->
+    <div class="main">
+        <div class="main_section">
+
+            <!-- left -->
+            <div class="main_left">
+                <!-- top left -->
+                <div class="top_left">
+                    <div class="time">
+                        <h2 class="time_term">Today</h2>
+                        <h1 class="time_number">3</h1>
+                        <h2 class="time_hour">hour</h2>
+                    </div>
+                    <div class="time">
+                        <h2 class="time_term">Month</h2>
+                        <h1 class="time_number">120</h1>
+                        <h2 class="time_hour">hour</h2>
+                    </div>
+                    <div class="time">
+                        <h2 class="time_term">Total</h2>
+                        <h1 class="time_number">1348</h1>
+                        <h2 class="time_hour">hour</h2>
+                    </div>
+                </div>
+                <!-- bottom left -->
+                <div class="bottom_left">
+                    <!-- グラフが入る -->
+                    <canvas id="myBarChart"></canvas>
+                    
+                </div>
+            </div>
+
+            <!-- right -->
+            <div class="main_right">
+                <!--  学習言語-->
+                <div class="doughnut">
+                    <h1 class="study">学習言語</h1>
+                    <div ></div>
+                    <div class="study_lang">
+                        <div class="lang">
+                            <div class="lang_circle js_circle"></div>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="lang">
+                            <div class="lang_circle css_circle"></div>
+                            <p>CSS</p>
+                        </div>
+                        <div class="lang">
+                            <div class="lang_circle php_circle"></div>
+                            <p>PHP</p>
+                        </div>
+                        <div class="lang">
+                            <div class="lang_circle html_circle"></div>
+                            <p>HTML</p>
+                        </div>
+                        <div class="lang">
+                            <div class="lang_circle laravel_circle"></div>
+                            <p>Laravel</p>
+                        </div>
+                        <div class="lang">
+                            <div class="lang_circle sql_circle"></div>
+                            <p>SQL</p>
+                        </div>
+                        <div class="lang">
+                            <div class="lang_circle shell_circle"></div>
+                            <p>SHELL</p>
+                        </div>
+                        <div class="lang">
+                            <div class="lang_circle other_circle"></div>
+                            <p>情報システム基礎知識（その他）</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 学習コンテンツ -->
+                <div class="doughnut">
+                    <h1 class="study">学習コンテンツ</h1>
+                    <div></div>
+                    <div class="atudy_cont">
+                        <div class="cont">
+                            <div class="cont_circle dot_circle"></div>
+                            <p>ドットインストール</p>
+                        </div>
+                        <div class="cont">
+                            <div class="cont_circle n_circle"></div>
+                            <p>N予備校</p>
+                        </div>
+                        <div class="cont">
+                            <div class="cont_circle posse_circle"></div>
+                            <p>POSSE課題</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bottom -->
+            <div class="main_bottom">
+                <p class="date">2020年10月</p>
+            </div>
+        </div>
+
+
+        <!-- modal -->
+        <div class="modal" id="modal">
+            <div class="modal_wrapper">
+                <div class="modal_container">
+                    <!-- left -->
+                    <div class="modal_left">
+                        <div class="modal_day">
+                            <p class="modal_title">学習日</p>
+                            <input type="text">
+                        </div>
+                        <div class="modal_contents">
+                            <p class="modal_title">学習コンテンツ（複数選択可）</p>
+                            <div class="modal_cont_choice">
+                                <div class="choice">
+                                    <div class="choice_check"></div>
+                                    <p class="choice_item">N予備校</p>
+                                </div>
+                                <div class="choice">
+                                    <div class="choice_check"></div>
+                                    <p class="choice_item">ドットインストール</p>
+                                </div>
+                                <div class="choice">
+                                    <div class="choice_check"></div>
+                                    <p class="choice_item">POSSE課題</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal_lang">
+                            <p class="modal_title">学習言語（複数選択可）</p>
+                            <div class="modal_lang_choice">
+                                <div class="choice">
+                                    <div class="choice_check"></div>
+                                    <p class="choice_item">HTML</p>
+                                </div>
+                                <div class="choice">
+                                    <div class="choice_check"></div>
+                                    <p class="choice_item">CSS</p>
+                                </div>
+                                <div class="choice">
+                                    <div class="choice_check"></div>
+                                    <p class="choice_item">JavaScript</p>
+                                </div>
+                                <div class="choice">
+                                    <div class="choice_check"></div>
+                                    <p class="choice_item">PHP</p>
+                                </div>
+                                <div class="choice">
+                                    <div class="choice_check"></div>
+                                    <p class="choice_item">Laravel</p>
+                                </div>
+                                <div class="choice">
+                                    <div class="choice_check"></div>
+                                    <p class="choice_item">SQL</p>
+                                </div>
+                                <div class="choice">
+                                    <div class="choice_check"></div>
+                                    <p class="choice_item">SHELL</p>
+                                </div>
+                                <div class="choice">
+                                    <div class="choice_check"></div>
+                                    <p class="choice_item">情報システム基礎知識（その他）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right -->
+                    <div class="modal_right">
+                        <div class="modal_time">
+                            <p class="modal_title">学習時間</p>
+                            <input type="text">
+                        </div>
+                        <div class="modal_twitter">
+                            <p class="modal_title">Twitter用コメント</p>
+                            <input type="text">
+                        </div>
+                        <div class="modal_twitter_share">
+                            <div class="share_checkbox"></div>
+                            <p class="share_text">Twitterにシェアする</p>
+                        </div>
+                    </div>
+
+                    <!-- bottom -->
+                    <div class="modal_bottom">
+                        <a href="">記録・投稿</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
