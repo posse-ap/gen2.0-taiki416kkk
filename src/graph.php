@@ -142,14 +142,14 @@ $contents = $content_stmt->fetchAll();
     type: "doughnut",
     data: {
       labels: [
-        "HTML",
-        "CSS",
-        "SQL",
-        "SHELL",
-        "Javascript",
-        "その他",
-        "PHP",
-        "Laravel",
+        // "HTML",
+        // "CSS",
+        // "SQL",
+        // "SHELL",
+        // "Javascript",
+        // "その他",
+        // "PHP",
+        // "Laravel",
       ],
       datasets: [{
         data: [
@@ -202,7 +202,9 @@ $contents = $content_stmt->fetchAll();
   const mySecondDonutChart = new Chart(donut2, {
     type: "doughnut",
     data: {
-      labels: ["N予備校", "課題", "ドットインストール"],
+      labels: [
+        // "N予備校", "課題", "ドットインストール"
+      ],
       datasets: [{
         data: [
           <?php
