@@ -27,7 +27,7 @@ services:
       - ./mysql/sql:/docker-entrypoint-initdb.d
       - ./mysql/my.conf/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
-      MYSQL_DATABASE: quizy
+      MYSQL_DATABASE: webapp
       MYSQL_USER: taiki
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: secret 

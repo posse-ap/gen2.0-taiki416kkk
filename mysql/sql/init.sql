@@ -15,14 +15,17 @@ CREATE TABLE `study_languages` (
 INSERT INTO
   `study_languages` (`study_language`, `color`)
 VALUES
-  ('JavaScript', '1754EF'),
-  ('CSS', '1071BD'),
-  ('PHP', '20BEDE'),
-  ('HTML', '3CCEFE'),
-  ('Lalavel', 'B29EF3'),
-  ('SQL', '6D46EC'),
-  ('SHELL', '4A18EF'),
-  ('情報システム基礎知識（その他)', '3105C0');
+  ('JavaScript', 'b29ef3'),
+  ('CSS', '0f70bd'),
+  ('PHP', '4a17ef'),
+  ('HTML', '0445ec'),
+  ('Lalavel', '3005c0'),
+  ('SQL', '20bdde'),
+  ('SHELL', '3ccefe'),
+  ('情報システム基礎知識（その他)', '6c46eb');
+
+
+
 
 DROP TABLE IF EXISTS `study_contents`;
 
@@ -35,9 +38,12 @@ CREATE TABLE `study_contents` (
 INSERT INTO
   `study_contents` (`study_content`, `color`)
 VALUES
-  ('ドットインストール', '1754EF'),
-  ('N予備校', '1071BD'),
-  ('POSSE課題', '20BEDE');
+  ('ドットインストール', '20bdde'),
+  ('N予備校', '0445ec'),
+  ('POSSE課題', '0f70bd');
+
+
+
 
 DROP TABLE IF EXISTS `study_data`;
 
@@ -75,4 +81,7 @@ VALUES
   ('2022-3-13', 3, 1, 3),
   ('2022-3-14', 3, 2, 3),
   ('2022-3-15', 8, 3, 3),
-  ('2022-3-16', 3, 2, 3);
+  ('2022-3-16', 3, 2, 4),
+  ('2022-5-01', 3, 2, 4),
+  ('2022-5-02', 4, 1, 5),
+  ('2022-5-07', 5, 3, 2);

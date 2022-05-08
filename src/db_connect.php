@@ -1,7 +1,7 @@
 <?php
 // echo phpinfo();
 
-$dsn = 'mysql:host=db;dbname=quizy;charset=utf8mb4;';
+$dsn = 'mysql:host=db;dbname=webapp;charset=utf8mb4;';
 $user = 'taiki';
 $password = 'password';
 
