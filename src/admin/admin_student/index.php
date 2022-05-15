@@ -25,7 +25,10 @@ if (isset($_SESSION['user_id']) && $_SESSION['time'] + 60 * 60 * 24 > time()) {
 
 
 <?php
-$stmt = $db->prepare('SELECT * FROM apply_info')
+$apply_info_stmt = $db->prepare("SELECT * FROM apply_info");
+$apply_info_stmt->execute();
+$apply_info = $apply_info_stmt->fetch();
+// var_dump($apply_info);
 ?>
 
 
