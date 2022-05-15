@@ -81,6 +81,17 @@ SET
   faculty = '理工学部情報工学科',
   graduate_year = '25卒',
   adress = '埼玉県草加市';
+INSERT INTO
+  apply_info
+SET
+  name = '藤間ゆうじ',
+  kana = 'フジマユウジ',
+  tel = '080-0000-0000',
+  mail = 'yuji@gmail.com',
+  college = '慶應義塾大学',
+  faculty = '商学部',
+  graduate_year = '24卒',
+  adress = '神奈川県横浜市';
 
 
 DROP TABLE IF EXISTS userpassreset;

@@ -1,7 +1,7 @@
 <?php
 session_start();
-if(isset($_GET['btn_logout']) ) {
-	unset($_SESSION['user_id']);
+if (isset($_GET['btn_logout'])) {
+    unset($_SESSION['user_id']);
     unset($_SESSION['time']);
     // header("Location: " . $_SERVER['PHP_SELF']);
 }
@@ -23,12 +23,31 @@ if (isset($_SESSION['user_id']) && $_SESSION['time'] + 60 * 60 * 24 > time()) {
 }
 ?>
 
+<?php
+$dsn = 'mysql:host=db;dbname=teamdev;charset=utf8;';
+$user = 'taiki';
+$password = 'password';
+
+try {
+    $db = new PDO($dsn, $user, $password);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo '接続失敗: ' . $e->getMessage();
+    exit();
+}
+?>
+
 
 <?php
 $apply_info_stmt = $db->prepare("SELECT * FROM apply_info");
 $apply_info_stmt->execute();
-$apply_info = $apply_info_stmt->fetch();
+$apply_info = $apply_info_stmt->fetchAll();
 // var_dump($apply_info);
+
+$info_num_stmt = $db->prepare("SELECT COUNT(*) FROM apply_info");
+$info_num_stmt->execute();
+$info_num = $info_num_stmt->fetchAll();
+// var_dump($info_num)
 ?>
 
 
@@ -53,14 +72,14 @@ $apply_info = $apply_info_stmt->fetch();
                 <input type="submit" name="btn_logout" value="ログアウト">
             </form>
         </div>
-    <div class="header_bottom">
-        <ul>
-            <li><a href="../top.php" class="page_focus">トップ</a></li>
-            <li><a href="../admin_student/index.php">ユーザー管理</a></li>
-            <li><a href="../admin_company/index.php">企業管理</a></li>
-            <li><a href="../admin_submit/index.php">新規エージェンシー</a></li>
-        </ul>
-    </div>
+        <div class="header_bottom">
+            <ul>
+                <li><a href="../top.php" class="page_focus">トップ</a></li>
+                <li><a href="../admin_student/index.php">ユーザー管理</a></li>
+                <li><a href="../admin_company/index.php">企業管理</a></li>
+                <li><a href="../admin_submit/index.php">新規エージェンシー</a></li>
+            </ul>
+        </div>
     </header>
 
 
@@ -73,7 +92,9 @@ $apply_info = $apply_info_stmt->fetch();
         </form>
 
         <div>
-            <h3>件数 :<span>10</span></h3>
+            <?php foreach ($info_num as $key => $info_nums) { ?>
+                <h3>件数 :<span><?Php echo $info_nums["COUNT(*)"] ?></span></h3>
+            <?php } ?>
         </div>
     </div>
 
@@ -92,48 +113,21 @@ $apply_info = $apply_info_stmt->fetch();
                         <th scope="col" class="narrow">削除</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th>あああああああ</th>
-                        <td class="price">naoki1010nissy@gmail.com</td>
-                        <td class="price">090-2066-9112</td>
-                        <td class="price">慶應義塾大学</td>
-                        <td class="price">経済学部</td>
-                        <td class="price">25卒</td>
-                        <td class="price">神奈川県川崎市中原区上丸子山王町2-1324-1-201</td>
-                        <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
-                    </tr>
-                    <tr>
-                        <th>西山直輝</th>
-                        <td class="price">naoki1010nissy@gmail.com</td>
-                        <td class="price">090-2066-9112</td>
-                        <td class="price">慶應義塾大学</td>
-                        <td class="price">経済学部</td>
-                        <td class="price">25卒</td>
-                        <td class="price">神奈川県川崎市中原区上丸子山王町2-1324-1-201</td>
-                        <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
-                    </tr>
-                    <tr>
-                        <th>西山直輝</th>
-                        <td class="price">naoki1010nissy@gmail.com</td>
-                        <td class="price">090-2066-9112</td>
-                        <td class="price">慶應義塾大学</td>
-                        <td class="price">経済学部</td>
-                        <td class="price">25卒</td>
-                        <td class="price">神奈川県川崎市中原区上丸子山王町2-1324-1-201</td>
-                        <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
-                    </tr>
-                    <tr>
-                        <th>西山直輝</th>
-                        <td class="price">naoki1010nissy@gmail.com</td>
-                        <td class="price">090-2066-9112</td>
-                        <td class="price">慶應義塾大学</td>
-                        <td class="price">経済学部</td>
-                        <td class="price">25卒</td>
-                        <td class="price">神奈川県川崎市中原区上丸子山王町2-1324-1-201</td>
-                        <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
-                    </tr>
-                </tbody>
+
+                <?php foreach ($apply_info as $key => $apply_infos) { ?>
+                    <tbody>
+                        <tr>
+                            <th><?php echo $apply_infos["name"] ?></th>
+                            <td class="price"><?php echo $apply_infos["mail"] ?></td>
+                            <td class="price"><?php echo $apply_infos["tel"] ?></td>
+                            <td class="price"><?php echo $apply_infos["college"] ?></td>
+                            <td class="price"><?php echo $apply_infos["faculty"] ?></td>
+                            <td class="price"><?php echo $apply_infos["graduate_year"] ?></td>
+                            <td class="price"><?php echo $apply_infos["adress"] ?></td>
+                            <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                        </tr>
+                    </tbody>
+                <?php } ?>
             </table>
         </div>
     </div>
@@ -147,4 +141,5 @@ $apply_info = $apply_info_stmt->fetch();
 </body>
 
 <script src="script.js"></script>
+
 </html>

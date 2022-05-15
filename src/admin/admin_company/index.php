@@ -77,102 +77,112 @@ if (isset($_SESSION['user_id']) && $_SESSION['time'] + 60 * 60 * 24 > time()) {
                 <tr>
                     <th>マイナビ</th>
                     <td class="price">2022-10-10</td>
-                    <td class="price"><button><a href="../admin_agent/index.html">掲載情報</a></button></td>
-                    <td class="price"><button><a href="../admin_edit/index.html">編集する</a></button></td>
-                    <td class="price"><button><a href="../admin_invoice/index.html">請求情報</a></button></td>
-                    <td class="price"><button><a href="../admin_agency/index.html">担当者</a></button></td>
+                    <td class="price"><button><a href="../admin_agent/index.php">掲載情報</a></button></td>
+                    <td class="price"><button><a href="../admin_edit/index.php">編集する</a></button></td>
+                    <td class="price"><button><a href="../admin_invoice/index.php">請求情報</a></button></td>
+                    <td class="price"><button><a href="../admin_agency/index.php">担当者</a></button></td>
                     <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
                     <!-- <img src="../img/iconmonstr-trash-can-9-240.png" alt=""> -->
                 </tr>
                 <tr>
                     <th>マイナビ</th>
                     <td class="price">2022-10-10</td>
-                    <td class="price"><button><a href="../admin_agent/index.html">掲載情報</a></button></td>
-                    <td class="price"><button><a href="../admin_edit/index.html">編集する</a></button></td>
-                    <td class="price"><button><a href="../admin_invoice/index.html">請求情報</a></button></td>
-                    <td class="price"><button><a href="../admin_agency/index.html">担当者</a></button></td>
+                    <td class="price"><button><a href="../admin_agent/index.php">掲載情報</a></button></td>
+                    <td class="price"><button><a href="../admin_edit/index.php">編集する</a></button></td>
+                    <td class="price"><button><a href="../admin_invoice/index.php">請求情報</a></button></td>
+                    <td class="price"><button><a href="../admin_agency/index.php">担当者</a></button></td>
                     <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <!-- <img src="../img/iconmonstr-trash-can-9-240.png" alt=""> -->
                 </tr>
                 <tr>
                     <th>マイナビ</th>
                     <td class="price">2022-10-10</td>
-                    <td class="price"><button><a href="../admin_agent/index.html">掲載情報</a></button></td>
-                    <td class="price"><button><a href="../admin_edit/index.html">編集する</a></button></td>
-                    <td class="price"><button><a href="../admin_invoice/index.html">請求情報</a></button></td>
-                    <td class="price"><button><a href="../admin_agency/index.html">担当者</a></button></td>
+                    <td class="price"><button><a href="../admin_agent/index.php">掲載情報</a></button></td>
+                    <td class="price"><button><a href="../admin_edit/index.php">編集する</a></button></td>
+                    <td class="price"><button><a href="../admin_invoice/index.php">請求情報</a></button></td>
+                    <td class="price"><button><a href="../admin_agency/index.php">担当者</a></button></td>
                     <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <!-- <img src="../img/iconmonstr-trash-can-9-240.png" alt=""> -->
                 </tr>
                 <tr>
                     <th>マイナビ</th>
                     <td class="price">2022-10-10</td>
-                    <td class="price"><button><a href="../admin_agent/index.html">掲載情報</a></button></td>
-                    <td class="price"><button><a href="../admin_edit/index.html">編集する</a></button></td>
-                    <td class="price"><button><a href="../admin_invoice/index.html">請求情報</a></button></td>
-                    <td class="price"><button><a href="../admin_agency/index.html">担当者</a></button></td>
+                    <td class="price"><button><a href="../admin_agent/index.php">掲載情報</a></button></td>
+                    <td class="price"><button><a href="../admin_edit/index.php">編集する</a></button></td>
+                    <td class="price"><button><a href="../admin_invoice/index.php">請求情報</a></button></td>
+                    <td class="price"><button><a href="../admin_agency/index.php">担当者</a></button></td>
                     <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <!-- <img src="../img/iconmonstr-trash-can-9-240.png" alt=""> -->
                 </tr>
                 <tr>
                     <th>マイナビ</th>
                     <td class="price">2022-10-10</td>
-                    <td class="price"><button><a href="../admin_agent/index.html">掲載情報</a></button></td>
-                    <td class="price"><button><a href="../admin_edit/index.html">編集する</a></button></td>
-                    <td class="price"><button><a href="../admin_invoice/index.html">請求情報</a></button></td>
-                    <td class="price"><button><a href="../admin_agency/index.html">担当者</a></button></td>
+                    <td class="price"><button><a href="../admin_agent/index.php">掲載情報</a></button></td>
+                    <td class="price"><button><a href="../admin_edit/index.php">編集する</a></button></td>
+                    <td class="price"><button><a href="../admin_invoice/index.php">請求情報</a></button></td>
+                    <td class="price"><button><a href="../admin_agency/index.php">担当者</a></button></td>
                     <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <!-- <img src="../img/iconmonstr-trash-can-9-240.png" alt=""> -->
                 </tr>
                 <tr>
                     <th>マイナビ</th>
                     <td class="price">2022-10-10</td>
-                    <td class="price"><button><a href="../admin_agent/index.html">掲載情報</a></button></td>
-                    <td class="price"><button><a href="../admin_edit/index.html">編集する</a></button></td>
-                    <td class="price"><button><a href="../admin_invoice/index.html">請求情報</a></button></td>
-                    <td class="price"><button><a href="../admin_agency/index.html">担当者</a></button></td>
+                    <td class="price"><button><a href="../admin_agent/index.php">掲載情報</a></button></td>
+                    <td class="price"><button><a href="../admin_edit/index.php">編集する</a></button></td>
+                    <td class="price"><button><a href="../admin_invoice/index.php">請求情報</a></button></td>
+                    <td class="price"><button><a href="../admin_agency/index.php">担当者</a></button></td>
                     <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <!-- <img src="../img/iconmonstr-trash-can-9-240.png" alt=""> -->
                 </tr>
                 <tr>
                     <th>マイナビ</th>
                     <td class="price">2022-10-10</td>
-                    <td class="price"><button><a href="../admin_agent/index.html">掲載情報</a></button></td>
-                    <td class="price"><button><a href="../admin_edit/index.html">編集する</a></button></td>
-                    <td class="price"><button><a href="../admin_invoice/index.html">請求情報</a></button></td>
-                    <td class="price"><button><a href="../admin_agency/index.html">担当者</a></button></td>
+                    <td class="price"><button><a href="../admin_agent/index.php">掲載情報</a></button></td>
+                    <td class="price"><button><a href="../admin_edit/index.php">編集する</a></button></td>
+                    <td class="price"><button><a href="../admin_invoice/index.php">請求情報</a></button></td>
+                    <td class="price"><button><a href="../admin_agency/index.php">担当者</a></button></td>
                     <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <!-- <img src="../img/iconmonstr-trash-can-9-240.png" alt=""> -->
                 </tr>
                 <tr>
                     <th>マイナビ</th>
                     <td class="price">2022-10-10</td>
-                    <td class="price"><button><a href="../admin_agent/index.html">掲載情報</a></button></td>
-                    <td class="price"><button><a href="../admin_edit/index.html">編集する</a></button></td>
-                    <td class="price"><button><a href="../admin_invoice/index.html">請求情報</a></button></td>
-                    <td class="price"><button><a href="../admin_agency/index.html">担当者</a></button></td>
+                    <td class="price"><button><a href="../admin_agent/index.php">掲載情報</a></button></td>
+                    <td class="price"><button><a href="../admin_edit/index.php">編集する</a></button></td>
+                    <td class="price"><button><a href="../admin_invoice/index.php">請求情報</a></button></td>
+                    <td class="price"><button><a href="../admin_agency/index.php">担当者</a></button></td>
                     <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <!-- <img src="../img/iconmonstr-trash-can-9-240.png" alt=""> -->
                 </tr>
                 <tr>
                     <th>マイナビ</th>
                     <td class="price">2022-10-10</td>
-                    <td class="price"><button><a href="../admin_agent/index.html">掲載情報</a></button></td>
-                    <td class="price"><button><a href="../admin_edit/index.html">編集する</a></button></td>
-                    <td class="price"><button><a href="../admin_invoice/index.html">請求情報</a></button></td>
-                    <td class="price"><button><a href="../admin_agency/index.html">担当者</a></button></td>
+                    <td class="price"><button><a href="../admin_agent/index.php">掲載情報</a></button></td>
+                    <td class="price"><button><a href="../admin_edit/index.php">編集する</a></button></td>
+                    <td class="price"><button><a href="../admin_invoice/index.php">請求情報</a></button></td>
+                    <td class="price"><button><a href="../admin_agency/index.php">担当者</a></button></td>
                     <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <!-- <img src="../img/iconmonstr-trash-can-9-240.png" alt=""> -->
                 </tr>
                 <tr>
                     <th>マイナビ</th>
                     <td class="price">2022-10-10</td>
-                    <td class="price"><button><a href="../admin_agent/index.html">掲載情報</a></button></td>
-                    <td class="price"><button><a href="../admin_edit/index.html">編集する</a></button></td>
-                    <td class="price"><button><a href="../admin_invoice/index.html">請求情報</a></button></td>
-                    <td class="price"><button><a href="../admin_agency/index.html">担当者</a></button></td>
+                    <td class="price"><button><a href="../admin_agent/index.php">掲載情報</a></button></td>
+                    <td class="price"><button><a href="../admin_edit/index.php">編集する</a></button></td>
+                    <td class="price"><button><a href="../admin_invoice/index.php">請求情報</a></button></td>
+                    <td class="price"><button><a href="../admin_agency/index.php">担当者</a></button></td>
                     <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <!-- <img src="../img/iconmonstr-trash-can-9-240.png" alt=""> -->
                 </tr>
                 <tr>
                     <th>マイナビ</th>
                     <td class="price">2022-10-10</td>
-                    <td class="price"><button><a href="../admin_agent/index.html">掲載情報</a></button></td>
-                    <td class="price"><button><a href="../admin_edit/index.html">編集する</a></button></td>
-                    <td class="price"><button><a href="../admin_invoice/index.html">請求情報</a></button></td>
-                    <td class="price"><button><a href="../admin_agency/index.html">担当者</a></button></td>
+                    <td class="price"><button><a href="../admin_agent/index.php">掲載情報</a></button></td>
+                    <td class="price"><button><a href="../admin_edit/index.php">編集する</a></button></td>
+                    <td class="price"><button><a href="../admin_invoice/index.php">請求情報</a></button></td>
+                    <td class="price"><button><a href="../admin_agency/index.php">担当者</a></button></td>
                     <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <!-- <img src="../img/iconmonstr-trash-can-9-240.png" alt=""> -->
                 </tr>
             </tbody>
         </table>

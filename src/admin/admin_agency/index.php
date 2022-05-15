@@ -53,9 +53,9 @@ if (isset($_SESSION['user_id']) && $_SESSION['time'] + 60 * 60 * 24 > time()) {
     </header>
 
 <div class="page_head">
-    <a href="../admin_company/index.html">企業情報</a>
+    <a href="../admin_company/index.php">企業情報</a>
     <p>></p>
-    <a href="../admin_agency/index.html" class="detail_focus">エージェンシー管理</a>
+    <a href="../admin_agency/index.php" class="detail_focus">エージェンシー管理</a>
 </div>
 
 <h2>マイナビ社 担当者情報</h2>
@@ -90,28 +90,28 @@ if (isset($_SESSION['user_id']) && $_SESSION['time'] + 60 * 60 * 24 > time()) {
                     <td class="price">人事部</td>
                     <td class="price">naoki1010nissy@gmail.com</td>
                     <td class="price">090-2066-9112</td>
-                    <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <td class="price"><a href="../admin_edit/delete.php"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
                 </tr>
                 <tr>
                     <th>西山直輝</th>
                     <td class="price">人事部</td>
                     <td class="price">naoki1010nissy@gmail.com</td>
                     <td class="price">090-2066-9112</td>
-                    <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <td class="price"><a href="../admin_edit/delete.php"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
                 </tr>
                 <tr>
                     <th>西山直輝</th>
                     <td class="price">人事部</td>
                     <td class="price">naoki1010nissy@gmail.com</td>
                     <td class="price">090-2066-9112</td>
-                    <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <td class="price"><a href="../admin_edit/delete.php"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
                 </tr>
                 <tr>
                     <th>西山直輝</th>
                     <td class="price">人事部</td>
                     <td class="price">naoki1010nissy@gmail.com</td>
                     <td class="price">090-2066-9112</td>
-                    <td class="price"><a href="../admin_edit/delete.html"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
+                    <td class="price"><a href="../admin_edit/delete.php"><img src="../img/iconmonstr-trash-can-9-240.png" alt=""></a></td>
                 </tr>
             </tbody>
         </table>

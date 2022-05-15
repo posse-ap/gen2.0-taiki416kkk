@@ -53,9 +53,9 @@ if (isset($_SESSION['user_id']) && $_SESSION['time'] + 60 * 60 * 24 > time()) {
     </header>
 
 <div class="page_head">
-    <a href="../admin_company/index.html">企業情報</a>
+    <a href="../admin_company/index.php">企業情報</a>
     <p>></p>
-    <a href="../admin_edit/index.html" class="detail_focus">編集ページ</a>
+    <a href="../admin_edit/index.php" class="detail_focus">編集ページ</a>
 </div>
 
 <div class="page_change">
