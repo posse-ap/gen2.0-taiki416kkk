@@ -8,7 +8,8 @@ $bar_stmt = $db->prepare("SELECT study_date,sum(study_hour) as sum_study_hour
   HAVING DATE_FORMAT(study_date, '%Y%m')=DATE_FORMAT(NOW(), '%Y%m')");
 $bar_stmt->execute();
 $bars = $bar_stmt->fetchAll();
-
+// var_dump($bars);
+// 学習時間が０の日の分の棒グラフがスキップされて、勉強した日の分だけの棒グラフになってしまうのででバックが必用
 
 $language_stmt = $db->prepare("SELECT study_languages.study_language,study_languages.color,sum(study_data.study_hour) as sum_study_hour
   FROM study_data
@@ -17,8 +18,8 @@ $language_stmt = $db->prepare("SELECT study_languages.study_language,study_langu
   GROUP BY study_languages.study_language,study_languages.color");
 $language_stmt->execute();
 $languages = $language_stmt->fetchAll();
-
 // var_dump($languages);
+
 
 $content_stmt = $db->prepare("SELECT study_contents.study_content,study_contents.color,sum(study_data.study_hour) as sum_study_hour
   FROM study_data
@@ -63,7 +64,7 @@ $contents = $content_stmt->fetchAll();
       datasets: [{
         data: [
           <?php
-          foreach ($bars as $bar) {
+          for ($i=0; $i<32; $i++) {
             if (!isset($bar["sum_study_hour"])) {
               echo $bar = 0 . ",";
             } else {
